@@ -25,7 +25,7 @@ public class FileReader {
             System.out.println("No file was found");
             e.printStackTrace();
         } catch (IOException e) {
-            System.out.println("An Input/Output exception occured when reading the file");
+            System.out.println("An Input/Output exception occurred when reading the file");
             e.printStackTrace();
         }
 
