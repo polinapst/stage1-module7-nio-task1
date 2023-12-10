@@ -21,8 +21,6 @@ public class FileReader {
 
             s = new String(buffer.array());
             return new Profile(extractName(s), extractAge(s), extractEmail(s), extractPhone(s));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
