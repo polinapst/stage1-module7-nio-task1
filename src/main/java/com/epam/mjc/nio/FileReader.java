@@ -22,10 +22,8 @@ public class FileReader {
             s = new String(buffer.array());
             return new Profile(extractName(s), extractAge(s), extractEmail(s), extractPhone(s));
         } catch (FileNotFoundException e) {
-            System.out.println("No file was found");
             e.printStackTrace();
         } catch (IOException e) {
-            System.out.println("An Input/Output exception occurred when reading the file");
             e.printStackTrace();
         }
 
